@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --color-body: #ffffff;
+    --color-heading: #94A7AE;
+    --color-footer: #3A4147;
+    --color-base: #D6DADD;
+    --color-brand: #000000;
+    --color-brand2: #4F5966;
+    --sidbar-width: 240px;
+    --font-base: 'Roboto', sans-serif;
+}
+
+.body{
+    background-color: var(--color-body);
+    color: var(--color-brand);
+    font-family: var(--font-base);
+}
+
+.window-scrolled {
+    background-color: var(--color-heading);
+    border-bottom: 0.2rem solid var(--color-bg-3);
+    box-shadow: 0 1rem 1rem rgba(0,0,0,0.3);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--color-brand);
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-brand);
+    transition: all 0.4s ease;
+}
+
+a:hover{
+    columns: var(--color-brand2);
+}
+
+img{
+    max-width: 100%;
+}
+
+.full-height {
+    min-height: 50vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 991.99px) and (max-width: 1400.98px) {
+    .full-height{
+        min-height: 50h;
+    }
+}
+
+@media (min-width: 1400.99px) {
+    .full-height{
+        min-height: 50vh;
+    }
+}
+
+@media (min-width: 575.99px) and (max-width: 991.98px) {
+    .full-height{
+        min-height: 10vh;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 575.98px) {
+    .full-height{
+        min-height: 0vh;
+    }
+}
+
+.shadow-effect {
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0px var(--color-brand);
+}
+
+.penjelasan{
+    font-size: 2rem;
+    font-family: var(--font-base);
+    padding-top: 50px;
+    padding-left:20px;
+    padding-right: 20px;
+}
+
+.judul{
+    font-family: var(--font-base);
+}
+
+.navbar-brand {
+    font-size: 30px; 
+    color: #000000;
+}
+
+.nav-link{
+    font-size: 30px;
+    color: #000000;
+}
+
+.dropdown-item{
+    font-size: 25px;
+}
+
+@media (min-width: 0px) and (max-width: 575.98px) {
+    .judul{
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 575.99px) and (max-width: 991.98px) {
+    .judul{
+        font-size: 100px;
+    }
+}
+
+@media (min-width: 991.99px){
+    .judul{
+        font-size: 100px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 575.98px) {
+    .penjelasan{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 575.99px) and (max-width: 991.98px) {
+    .penjelasan{
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 991.99px) {
+    .penjelasan{
+        font-size: 35px;
+    }
+}
+
+#gallery{
+    padding: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 50px;
+}
+
+@media (min-width: 991.99px) {
+    #gallery{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+@media (min-width: 575.99px) and (max-width: 991.98px) {
+    #gallery{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 575.98px) {
+    #gallery{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+#gallery img{
+    cursor: pointer;
+}
+
+#gallery-modal .modal-img{
+	width: 100%;
+}
+
+.tombol{
+    padding-bottom: 30px;
+}
+
+.tombol:hover{
+    color: var(--color-heading);
+}
+
+@media (min-width: 991.99px) {
+    .tombol{
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 575.99px) and (max-width: 991.98px) {
+    .tombol{
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 575.98px) {
+    .tombol{
+        font-size: 20px;
+    }
+}
+
+
+
+footer {
+    background-color: var(--color-footer);
+}
+
+@media (min-width: 991.99px) {
+    footer{
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 575.99px) and (max-width: 991.98px) {
+    footer{
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 575.98px) {
+    footer{
+        font-size: 20px;
+    }
+}
+
+
+
+footer a i {
+    color: #ffffff; /* Atur warna sesuai kebutuhan */
+    font-size: 35px;
+  }
+
+  @media (min-width: 991.99px) {
+    footer a i{
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 575.99px) and (max-width: 991.98px) {
+    footer a i{
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 575.98px) {
+    footer a i{
+        font-size: 30px;
+    }
+}
